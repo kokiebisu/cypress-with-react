@@ -1,12 +1,13 @@
 {
   "name": "cypress-react-starter",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
     "serve:webpack": "webpack serve",
     "serve:json-server": "json-server --watch db.json",
-    "dev": "concurrently \"yarn serve:webpack\" \"yarn serve:json-server\""
+    "dev": "concurrently \"yarn serve:webpack\" \"yarn serve:json-server\"",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "@babel/core": "^7.12.17",
@@ -19,9 +20,13 @@
     "json-server": "^0.16.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.23.0",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "cypress": "^6.5.0"
   }
 }
